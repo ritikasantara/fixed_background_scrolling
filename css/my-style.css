@@ -37,9 +37,6 @@ nav{
 nav li{
 
     list-style-type: none;
-    
-
-    
     float:left;
     
 }
@@ -109,8 +106,8 @@ input:focus {
     position: absolute;
     float: right;
     right: 200px;
-    top: 220px;
-    color: #d3d3d3;
+    top: 230px;
+    color: rgba(200,200,200,0.8);
     border-radius: 6px;
  
 
@@ -124,8 +121,12 @@ input:focus {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    transition: all 2s ease-in-out;
     position: relative;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+       transition: all 2s ease-in-out;
+    
     
     
 }
