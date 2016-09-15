@@ -6,6 +6,7 @@
 html,body{
 
     height: 100%;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -14,6 +15,9 @@ h1, h2, h3, h4, h5, h6, p{
 
 }
 
+/* navigation bar */
+
+
 nav{
 
     position: fixed;
@@ -21,46 +25,123 @@ nav{
     width: 100%;
     background-color: rgba(0,0,0,.5);
     z-index: 99;
+    font-size: 15px;
+    clear: both;
 
 }
+
+nav a{
+
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 2px;
+    margin-left: 30px;
+    line-height: 50px;
+    
+}
+
+nav a:hover{
+  
+  background-color: #d3d3d3;
+
+}
+
+/* search input box */
+
+input{
+    background-color: transparent;
+    border: 1px solid;
+    padding: 10px 15px;
+    height: 20px;
+    width: 160px;
+    color: #CCC;
+    float: right;
+    margin-top: 4px;
+    margin-right: 40px;
+    border-radius: 50px;
+    border: 1px solid #87cefa;
+}
+
+input:focus {
+
+  outline: none;
+
+}
+
+
+#search{
+
+    position: absolute;
+    right: 60px;
+    color: #fff;
+    margin-top: 15px;
+
+}
+
+/* site name */
+
+#sitename{
+
+    font-size: 70px;
+    border: 9px solid rgba(200,200,200,0.6);
+    padding: 20px 30px;
+    position: absolute;
+    float: right;
+    right: 200px;
+    top: 220px;
+    color: #d3d3d3;
+    border-radius: 6px;
+ 
+
+}
+/* sections */
 
 .sect{
 
     height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: all 2s ease-in-out;
     
     
-
 }
 
 .one{
 
  
-    background-image: url(../images/imagemaincourse.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image: url(../images/landing_image.jpg);
 
 }
 
 .two{
 
-    background-color: #f0fff0;
+    background-image: url(../images/maincourse.jpg);
 
 }
 
 .three{
 
-    background-color: #ffdab9;
+    background-image: url(../images/starter.jpg);
 
 }
 
 .four{
 
-    background-color: #f0f8ff;
+    background-image: url(../images/snacks.jpg);
 
 }
 
 .five{
 
-    background-color: #e0ffff;
+    background-image: url(../images/desserts.jpg);
+
 }
+
+.six{
+
+    background-image: url(../images/popular.jpg);
+
+}
+
